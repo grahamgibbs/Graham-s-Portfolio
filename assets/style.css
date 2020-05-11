@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Defining colors */
+    :root {
+        --Dark-Blue: #336699;
+        --Light: #ffffff;
+        --Dark-Grey: #333333;
+        --Light-Grey: #808080;
+        --Light-Blue: #b3d9ff;
+
+}
+
+body {
+    color: #b3d9ff;
+    font-family: Helvetica, Arial, sans-serif;
+    
+    }   
+    /* apply styles to header */
+        header {
+            padding: 20px 35px;
+            background-color: #b3d9ff;
+        }
+
+        header h1 {
+            font-weight: bold;
+            font-size: 36px;
+            color: #fce138;
+            margin: 0;
+            display: inline;
+        }
+
+        header a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        header nav {
+            float: right;
+            color: light;
+            }
+        
+        header nav ul li {
+            display: inline;
+        }
+
+
+
+
+
+
