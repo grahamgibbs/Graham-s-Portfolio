@@ -22,13 +22,13 @@ body {
     /* apply styles to header */
         header {
             padding: 20px 35px;
-            background-color: #b3d9ff;
+            background-color: var(--Dark-Grey);
         }
 
         header h1 {
             font-weight: bold;
             font-size: 36px;
-            color: #fce138;
+            color: var(Dark-Grey);
             margin: 0;
             display: inline;
         }
