@@ -15,7 +15,7 @@
 }
 
 body {
-    color: #b3d9ff;
+    color: black;
     font-family: Helvetica, Arial, sans-serif;
     
     }   
@@ -23,29 +23,130 @@ body {
         header {
             padding: 20px 35px;
             background-color: var(--Dark-Grey);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+          
         }
 
         header h1 {
             font-weight: bold;
             font-size: 36px;
-            color: var(Dark-Grey);
+            color: var(--Dark-Grey);
             margin: 0;
-            display: inline;
+            align-text: right;
+            
+        }
+
+        .title-outline {
+            width: 25%;
+            margin: 10;
+            background: var(--Light-Blue)
+                                                        
         }
 
         header a {
             text-decoration: none;
-            color: blue;
+            color: var(--Light-Blue);
+            margin: 7px 0;
+
         }
 
         header nav {
             float: right;
-            color: light;
-            }
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: underline; 
+            margin: 7px 0;
+            
+        }
+
+        header nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
         
         header nav ul li {
             display: inline;
+            margin: 50;
         }
+
+        header nav ul li a {
+            margin: 0 20px;
+            font-size: 1.55vw;
+        }
+
+        .primary-border {
+            border-color: var(--Light-Blue)            
+        }
+
+        .hero {
+            background-image: url("../images/portfolio background.jpg");
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: grid;
+            grid-template-columns: 8;
+            grid-template-rows: 8;
+            grid-gap: 20px;
+            grid-auto-flow: dense;
+        }
+
+        .Welcome {
+            
+            grid-column: 8;
+            grid-row: 8;
+            
+        }
+
+        .Welcome-Border {            
+            background: var(--Light-Blue);
+            color: var(--Dark-Grey);
+        }
+
+        .info {
+            
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 8;
+            grid-template-rows: 1;
+            grid gap: 40 px;
+            align-text: center;
+          
+
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-text: center;
+            
+        }
+
+        .section-title {
+            color: var(--Dark-Blue);
+            font-size: 60 px;
+            font-weight: bold;
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            border-right: 4px solid var(--Dark-Blue);
+            margin: 0 0 0 20;
+            align-text: center;
+            
+        }
+  
+        .bio {
+            grid-column: 3 / span 8;
+            color: var(--Dark-Blue);
+        }
+
+        
 
 
 
